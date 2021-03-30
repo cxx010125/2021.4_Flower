@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>四季名花</title>
+
+    <style>
+        /*---------------------Winter-------------------------*/
+        
+        #Winter {
+            background: url("images/Winter/Winter.jpg");
+            background-size: cover;
+            height: 700px;
+            width: 1300px;
+            display: inline-block;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 10px 20px 20px 5px black;
+            margin: 125px auto;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            /* ↓ 一、 -----------四季内容显示------------*/
+            var oPress = document.getElementById('readMore');
+            var oDiv_FS = document.getElementById('FourSeasons');
+            oPress.onclick = function() {
+                oDiv_FS.style.height = 3972;
+                var alpha_FS = 10;
+                var timer_FS = null;
+                timer_FS = setInterval(function() {
+                    if (alpha_FS >= 100)
+                        clearInterval(timer_FS);
+                    else {
+                        alpha_FS += 3;
+                        oDiv_FS.style.opacity = alpha_FS / 100;
+                    }
+                }, 30);
+            };
+            /* ↑ -------------------------------------------*/
+
+
+            /* ↓ 三、 -----------顶部导航栏滚动--------------*/
+            var new_scroll = 0;
+            var last_scroll;
+            var header = document.getElementById("head");
+            window.addEventListener('scroll', function(e) {
+                last_scroll = window.scrollY;
+
+                // 向下滚动
+                if (new_scroll < last_scroll && last_scroll > 80) {
+                    header.classList.remove("slideDown");
+                    header.classList.add("slideUp");
+
+                    // 向上滚动
+                } else if (new_scroll > last_scroll) {
+                    header.classList.remove("slideUp");
+                    header.classList.add("slideDown");
+                }
+                new_scroll = last_scroll;
+            })
+        }
+    </script>
+    <link rel="stylesheet" href="css/Whole.css">
+    <link rel="stylesheet" href="css/First.css">
+    <link rel="stylesheet" href="css/Spring.css">
+    <link rel="stylesheet" href="css/Summer.css">
+    <link rel="stylesheet" href="css/Autumn.css">
+</head>
+
+<body>
+    <div id="whole">
+
+        <!--顶部导航栏 板块 -->
+        <header id="head">
+            <h1>Flower</h1>
+            <ul id="topNav">
+                <li>
+                    <div class="navWrap"><a href="#topPoint">HomePage</a></div>
+                </li>
+                <li>
+                    <div class="navWrap"><a href="#SpringPoint">Spring</a></div>
+                </li>
+                <li>
+                    <div class="navWrap"><a href="#SummerPoint">Summer</a></div>
+                </li>
+                <li>
+                    <div class="navWrap"><a href="#AutumnPoint">Autumn</a></div>
+                </li>
+                <li>
+                    <div class="navWrap"><a href="#WinterPoint">Winter</a></div>
+                </li>
+            </ul>
+        </header>
+
+
+        <!--首页 板块 -->
+        <div id="First">
+            <a id="topPoint"></a>
+            <!--顶部锚点 -->
+            <div style="height:300px;"></div>
+            <p>Let life be beautiful like summer flower,</p><br/>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;and death like autumn leaves.</p><br/>
+            <p>让生命如夏花般绚烂,死亡如秋叶般静美</p><br/>
+            <a id="readMore" href="#SpringPoint"><span id="more"> Read More ⮛ </span></a>
+        </div>
+
+        <div id="FourSeasons">
+            <!--春天 板块 -->
+            <div id="Spring">
+                <a id="SpringPoint"></a>
+                <!--春天锚点 -->
+                <br/><br/><br/><br/><br/>
+                <ul>
+                    <li class="Spring_li">
+                        <img id="img1" src="images/Spring/spring_border.png" width="220px"><br/>
+                        <fieldset id="YuJinXiang">
+                            <legend>郁金香</legend>
+                            <p align="left" style="text-indent:2em;">郁金香是百合科郁金香属的多年生草本植物，具鳞茎。英文名为“Garden tulip”或“Didier's tulip”。花被片红色或杂有白色和黄色，有时为白色或黄色。</p>
+                        </fieldset>
+                    </li>
+
+                    <li class="Spring_li">
+                        <img id="img2" src="images/Spring/spring_border.png" width="220px"><br/>
+                        <fieldset id="MuDan">
+                            <legend>牡丹</legend>
+                            <p align="left" style="text-indent:2em;">牡丹，色泽艳丽，富丽堂皇，素有“花中之王”的美誉。牡丹品种繁多，色泽亦多，以黄、绿、肉红、深红为上品，尤其黄、绿为贵。花大而香，故有“国色天香”之称。</p>
+                        </fieldset>
+                    </li>
+
+                    <li class="Spring_li">
+                        <img id="img3" src="images/Spring/spring_border.png" width="220px"><br/>
+                        <fieldset id="LingLan">
+                            <legend>铃兰</legend>
+                            <p align="left" style="text-indent:2em;">铃兰株形小巧，花香怡人，在法国，是幸福的象征。铃兰随风轻扣的乐声只有最爱它的人才能听见，它的守候只为最有心的人。只伴着五月的春风开放，她的花语是幸福归来。</p>
+                        </fieldset>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--夏天 板块 -->
+            <div id="Summer">
+                <a id="SummerPoint"></a>
+                <!--夏天锚点 -->
+                <div></div>
+                <!--防止锚点错位 -->
+                <div id="Sum_main">
+                    <ul id="Sum_main_ul">
+                        <li class="Sum_main_li">紫罗兰<img src="images/Summer/ZiLuoLan.jpg"></li>
+                        <li class="Sum_main_li">茉莉花<img src="images/Summer/MoLiHua.jpg"></li>
+                        <li class="Sum_main_li">荷花<img src="images/Summer/HeHua.jpg"></li>
+                        <li class="Sum_main_li">曼陀罗<img src="images/Summer/ManTuoLuo.jpg"></li>
+                    </ul>
+                </div><br/>
+                <input type="button" id="Sum_btn_left" value="<" />
+                <div id="Sum_words">
+                    <p id="Sum_words_title"></p>
+                    <span id="Sum_words_content">~试试点击花朵的图片~</span>
+                </div>
+                <input type="button" id="Sum_btn_right" value=">" />
+            </div>
+
+
+            <!--秋天 板块 -->
+            <div id="Autumn">
+                <a id="AutumnPoint"></a>
+                <!--秋天锚点 -->
+                <ul id="Aut_pic">
+                    <!--金茶花-->
+                    <li id="Aut_00" class="Aut_pics">
+                        <!-- <a target="_blank" href="https://baike.baidu.com/item/%E9%87%91%E8%8A%B1%E8%8C%B6/363114?fromtitle=%E9%87%91%E8%8C%B6%E8%8A%B1&fromid=6801127&fr=aladdin">
+						<img src="images/Autumn/JinChaHuaX.jpg" width="100%">
+					</a> -->
+                        <img src="images/Autumn/JinChaHuaX.jpg" width="100%">
+                    </li>
+                    <!--迷迭香-->
+                    <li id="Aut_01" class="Aut_pics">
+                        <!-- <a target="_blank" href="https://baike.baidu.com/item/%E8%BF%B7%E8%BF%AD%E9%A6%99/7550?fr=aladdin">
+						<img src="images/Autumn/MiDieXiangX.jpg" width="100%">
+					</a> -->
+                        <img src="images/Autumn/MiDieXiangX.jpg" width="100%">
+                    </li>
+                    <!--桂花-->
+                    <li id="Aut_02" class="Aut_pics">
+                        <!-- <a target="_blank" href="https://baike.baidu.com/item/%E6%A1%82%E8%8A%B1/157211?fr=aladdin">
+						<img src="images/Autumn/GuiHuaX.jpg" width="100%">
+					</a> -->
+                        <img src="images/Autumn/GuiHuaX.jpg" width="100%">
+                    </li>
+                    <!--昙花-->
+                    <li id="Aut_03" class="Aut_pics">
+                        <!-- <a target="_blank" href="https://baike.baidu.com/item/%E6%98%99%E8%8A%B1/9779247?fr=aladdin ">
+						<img src="images/Autumn/TanHuaX.jpg" width="100%">
+					</a> -->
+                        <img src="images/Autumn/TanHuaX.jpg" width="100%">
+                    </li>
+                    <!--凤尾兰-->
+                    <li id="Aut_04" class="Aut_pics">
+                        <!-- <a target="_blank" href="https://baike.baidu.com/item/%E5%87%A4%E5%B0%BE%E5%85%B0/6557652?fr=aladdin">
+						<img src="images/Autumn/FengWeiLanX.jpg" width="100%">
+					</a> -->
+                        <img src="images/Autumn/FengWeiLanX.jpg" width="100%">
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--冬天 板块 -->
+            <div id="Winter">
+                <a id="WinterPoint"></a>
+                <!--冬天锚点 -->
+            </div>
+
+            <div></div>
+            <!--撑起冬天 板块 -->
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="js/Spring.js"></script>
+    <script type="text/javascript" src="js/Summer.js"></script>
+    <script type="text/javascript" src="js/Autumn.js"></script>
+
+</body>
+
+
+</html>

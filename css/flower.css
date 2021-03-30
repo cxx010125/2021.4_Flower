@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#flower_main {
+    width: 80vw;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-width: 832px;
+}
+
+#flower_intro_title {
+    color: rgb(80, 80, 80);
+    font-size: 40px;
+    margin: 8vh auto 6vh auto;
+    letter-spacing: 3px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+#flower_intro {
+    color: rgb(138, 138, 138);
+    font-size: 20px;
+    text-indent: 2em;
+    letter-spacing: 1.5px;
+    padding-bottom: 8vh;
+    line-height: 30px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+#flower_nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 80vw;
+    margin-top: 8vh;
+}
+
+.flower_icon {
+    width: 12vw;
+    height: 12vw;
+    cursor: pointer;
+    min-width: 124.8px;
+    min-height: 124.8px;
+}
+
+.flower_icon:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.seasons {
+    width: 20vw;
+    min-width: 208px;
+    height: 35vh;
+    text-align: center;
+}
+
+.spring_intro_title {
+    text-align: center;
+    color: rgb(120, 120, 120);
+    font-size: 20px;
+    margin: 2px auto 8px auto;
+    letter-spacing: 3px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.spring_intro {
+    color: rgb(138, 138, 138);
+    font-size: 14px;
+    text-indent: 2em;
+    letter-spacing: 1px;
+    margin: 0px 20px;
+    line-height: 23px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+#flower_triangle {
+    width: 68vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: rgb(230, 230, 230);
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+#flower_content {
+    width: 100vw;
+    min-width: 1040px;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.flower_content_up {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 80vw;
+    height: 41vh;
+    margin: 6vh 0;
+    min-width: 832px;
+}
+
+.flower_content_down {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 80vw;
+    height: 41vh;
+    margin-bottom: 6vh;
+    min-width: 832px;
+}
+
+.flower_content_part {
+    width: 23vw;
+    height: 41vh;
+    border: solid 1px rgb(180, 180, 180);
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+    min-width: 241px;
+}
+
+.flower_content_part:hover {
+    margin-bottom: 12px;
+    box-shadow: 0 5px 5px rgba(100, 100, 100, 0.6);
+    transition-duration: 0.2s;
+}
+
+.flower_content_part_pic {
+    width: 23vw;
+    height: 25vh;
+    min-width: 241px;
+    opacity: 0.9;
+}
+
+.flower_content_part:hover .flower_content_part_pic {
+    opacity: 1;
+}
+
+.flower_content_part_title {
+    text-align: center;
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    min-width: 241px;
+    margin-bottom: 1vh;
+}
+
+.flower_content_part_intro {
+    width: 20vw;
+    height: 15vh;
+    color: rgb(80, 80, 80);
+    font-size: 14px;
+    text-indent: 2em;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    overflow: hidden;
+    margin: 2px auto;
+    min-width: 208px;
+}

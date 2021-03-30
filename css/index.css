@@ -1,0 +1,253 @@
+html::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+html::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    background: #a7a7a7;
+}
+
+html::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 10px;
+    background: #EDEDED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 7vh;
+    min-width: 1024px;
+    width: 100vw;
+    background-color: rgb(60, 60, 60);
+}
+
+.top_title {
+    display: inline-block;
+    color: azure;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 40px;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+#top_title_1 {
+    margin-left: 30px;
+    color: rgb(74, 255, 246);
+    font-size: 40px;
+}
+
+#top_icon_contain {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    height: 30px;
+    width: 180px;
+    margin-top: 12px;
+}
+
+.top_icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0px 8px;
+    opacity: 0.8;
+}
+
+.top_icon:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 9vh;
+    width: 100vw;
+}
+
+#nav_title_contain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    height: 80px;
+    min-width: 660px;
+}
+
+.nav_title {
+    font-size: 26px;
+    line-height: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    margin-left: 90px;
+    transition-duration: 0.25s;
+}
+
+.nav_title:hover {
+    color: rgb(120, 120, 120);
+    margin-bottom: 1px;
+}
+
+.nav_title_choose {
+    font-size: 26px;
+    line-height: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    margin-left: 90px;
+    border-bottom: solid 4px rgb(81, 230, 222);
+    color: rgb(81, 230, 222);
+    box-shadow: 0 3px 0px rgba(81, 230, 222, 0.3);
+}
+
+#search {
+    display: inline-block;
+    height: 80px;
+    margin-right: 15vw;
+    min-width: 330px;
+}
+
+#search form {
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #777777;
+    border: 0px;
+}
+
+#search_text {
+    height: 30px;
+    width: 250px;
+    border-radius: 3px;
+    border: solid 1px rgb(190, 190, 190);
+}
+
+#search_submit {
+    vertical-align: middle;
+    width: 60px;
+    height: 30px;
+    border: solid 1px rgb(190, 190, 190);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+#search_submit:hover {
+    background-color: rgba(81, 230, 223, 0.3);
+}
+
+#home {
+    min-width: 1024px;
+    width: 100vw;
+    height: 88vh;
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 0 5px 5px rgba(100, 100, 100);
+}
+
+#home_ul_pic {
+    width: 500vw;
+    animation: move 16s infinite linear;
+}
+
+@keyframes move {
+    0%,
+    20% {
+        margin-left: 0px;
+    }
+    25%,
+    45% {
+        margin-left: -100vw;
+    }
+    50%,
+    70% {
+        margin-left: -200vw;
+    }
+    75%,
+    95% {
+        margin-left: -300vw;
+    }
+    100% {
+        margin-left: -400vw;
+    }
+}
+
+#home_ul_pic li {
+    float: left;
+    min-width: 1024px;
+    width: 100vw;
+    height: 88vh;
+    list-style: none;
+}
+
+#home_ul_pic li img {
+    min-width: 1024px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#home_ul_point {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 320px;
+    height: 80px;
+    top: 75vh;
+    left: -50%;
+    margin: 0 auto;
+}
+
+.home_ul_point_li {
+    width: 80px;
+    height: 80px;
+    list-style: none;
+    color: rgb(81, 230, 222, 0.9);
+    text-align: center;
+    font-size: 21px;
+}
+
+#copyright {
+    height: 7vh;
+    min-width: 1024px;
+    width: 100vw;
+    background-color: rgb(230, 230, 230);
+    color: rgb(120, 120, 120);
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 7vh;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(150, 150, 150);
+}
+
+a {
+    text-decoration: none;
+}

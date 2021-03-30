@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --clock_num: #b0e9ff;
+    --transition: all 150ms cubic-bezier(.46, 1.13, .67, .87);
+}
+
+.clock {
+    width: 12vw;
+    min-width: 245px;
+    height: 7vh;
+    display: block;
+    position: relative;
+    margin: 0px auto;
+}
+
+.clock-container {
+    width: 10vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px 5px 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock-container p {
+    font-size: 20px;
+    color: var(--clock_num);
+    font-weight: 800;
+}
+
+.clock-container p:first-letter {
+    letter-spacing: 5px;
+}
+
+.clock .bottom {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.clock .bottom .progress-bar {
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: 9;
+    background-color: #97e1ff;
+    transition: var(--transition);
+    border-radius: 20px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

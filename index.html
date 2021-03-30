@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>四季名花</title>
+    <script>
+        window.onload = function() {
+            home_ul_point_li();
+            nav_jud();
+        }
+    </script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/flower.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+
+
+
+<body>
+    <!-- 顶部 -->
+    <div id="top">
+        <div style="min-width: 150px;">
+            <p class="top_title" id="top_title_1">F</p>
+            <p class="top_title">lower</p>
+        </div>
+        <div class="clock">
+            <div class="clock-container">
+                <div class="hours">
+                    <p id="hour">00</p>
+                </div>
+                <div class="colon"></div>
+                <div class="minutes">
+                    <p id="minute">00</p>
+                </div>
+                <div class="colon"></div>
+                <div class="seconds">
+                    <p id="second">00</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div style="margin-right: 50px;min-width: 200px;">
+            <img src="../四季名花/images/index/qq.png" class="top_icon">
+            <img src="../四季名花/images/index/weixin.png" class="top_icon">
+            <img src="../四季名花/images/index/github.png" class="top_icon">
+            <img src="../四季名花/images/index/erweima.png" class="top_icon">
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div id="nav">
+        <div id="nav_title_contain">
+            <p class="nav_title_choose" id="nav_title_home"> HOME </p>
+            <p class="nav_title" id="nav_title_flower"> FLOWER </p>
+            <p class="nav_title" id="nav_title_about"> ABOUT </p>
+        </div>
+        <!-- 发送搜索请求给百度 -->
+        <div id="search">
+            <form action="http://www.baidu.com/s" method="GET" target="_blank">
+                <input id="search_text" type="text" placeholder=" Search Something···" name="wd" size="38" />
+                <input id="search_submit" type="submit" value="🌐" />
+            </form>
+        </div>
+    </div>
+
+    <!-- HOME板块 -->
+    <div id="home" class="hide">
+        <ul id="home_ul_pic">
+            <li class="home_ul_li"><img src="../四季名花/images/index/Spring_back.png"></li>
+            <li class="home_ul_li"><img src="../四季名花/images/index/Summer_back.png"></li>
+            <li class="home_ul_li"><img src="../四季名花/images/index/Autumn_back.png"></li>
+            <li class="home_ul_li"><img src="../四季名花/images/index/Winter_back.png"></li>
+            <li class="home_ul_li"><img src="../四季名花/images/index/Spring_back.png"></li>
+        </ul>
+        <div style="position: absolute; left: 50%;">
+            <ul id="home_ul_point">
+                <li class="home_ul_point_li">
+                    <p>◉</p>
+                </li>
+                <li class="home_ul_point_li">
+                    <p>◉</p>
+                </li>
+                <li class="home_ul_point_li">
+                    <p>◉</p>
+                </li>
+                <li class="home_ul_point_li">
+                    <p>◉</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FLOWER板块 -->
+    <div id="flower" class="hide">
+        <div id="flower_main" class="show">
+            <!-- flex纵向布局，第一部分 -->
+            <p id="flower_intro_title">
+                # 简要概述 #
+            </p>
+            <p id="flower_intro">
+                在印象中，人们了解一种花朵往往只通过这种花的外观或者仅仅停留在名字上，因此我们想通过对花朵的名字、样貌、由来、含义、功效等等方面来介绍不同的花朵，让人们对名花们有进一步的了解。我们的网站针对于一年四季中，每个季节特有并且带有丰富内涵的花卉展开介绍，通过HTML、CSS以及JavaScript技术的综合应用，以“花”为出发点，想要向浏览者表达出：春华、秋实、夏蝉、冬雪，每个季节都有着各自的特色、每一朵花都有着各自的内涵。
+            </p>
+            <div style="width:70vw;min-width: 728px;height:1px;border-bottom: solid rgb(180, 180, 180, 0.6) 1px;"></div>
+            <!-- flex纵向布局，第二部分 -->
+            <div id="flower_nav">
+                <!-- 春季logo -->
+                <div id="spring" class="seasons">
+                    <img src="../四季名花/images/flower/Spring/spring_icon_on.png" class="flower_icon">
+                    <p class="spring_intro_title">
+                        春季（Spring）
+                    </p>
+                    <p class="spring_intro">
+                        是万物复苏的季节。春天气候温暖适中，中国内陆大部分地区少雨。万物生机萌发，天气多变，乍暖还寒。春阳因春天阳光温和明媚，令人神往陶醉。
+                    </p>
+                </div>
+                <!-- 夏季logo -->
+                <div id="summer" class="seasons">
+                    <img src="../四季名花/images/flower/Summer/summer_icon.png" class="flower_icon">
+                    <p class="spring_intro_title">
+                        夏季（Summer）
+                    </p>
+                    <p class="spring_intro">
+                        是许多花卉旺盛生长的最好季节，充足的光照和适宜的温度给植物提供了所需的条件。大多地区会受到低气压影响，气候相对稳定。
+                    </p>
+                </div>
+                <!-- 秋季logo -->
+                <div id="summer" class="seasons">
+                    <img src="../四季名花/images/flower/Autumn/Autumn_icon.png" class="flower_icon">
+                    <p class="spring_intro_title">
+                        秋季（Autumn）
+                    </p>
+                    <p class="spring_intro">
+                        随着气温的渐渐下降，许多落叶多年生植物的叶子会渐渐变色，枯萎，只留下枝干度过冬天，有些花卉也无法适应气温而凋谢，但有些却争相开放。
+                    </p>
+                </div>
+                <!-- 冬季logo -->
+                <div id="summer" class="seasons">
+                    <img src="../四季名花/images/flower/Winter/winter_icon.png" class="flower_icon">
+                    <p class="spring_intro_title">
+                        冬季（Winter）
+                    </p>
+                    <p class="spring_intro">
+                        生气闭蓄，万物在冬季闭藏，冬季是享受丰收、休养生息的季节。很多植物会凋谢，部分动物则会选择休眠，而部分花卉却悄然开放了。
+                    </p>
+                </div>
+            </div>
+            <!-- flex纵向布局，第三部分 -->
+            <div id="flower_triangle">
+                <div class="triangle visible" id="triangle_1"></div>
+                <div class="triangle invisible" id="triangle_2"></div>
+                <div class="triangle invisible" id="triangle_3"></div>
+                <div class="triangle invisible" id="triangle_4"></div>
+            </div>
+            <!-- flex纵向布局，第四部分 -->
+            <div id="flower_content">
+                <!-- 1.spring模块 -->
+                <div id="flower_content_spring" class="show">
+                    <!-- spring部分上面三块 -->
+                    <div class="flower_content_up">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E9%83%81%E9%87%91%E9%A6%99/13506?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Spring/YuJinXiang1.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    郁金香
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    郁金香是百合科郁金香属的多年生草本植物，具鳞茎。花被片红色或杂有白色和黄色，有时为白色或黄色。条状披针形至...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E9%93%83%E5%85%B0/43127?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Spring/LingLan2.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    铃兰
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    铃兰植株矮小，幽雅清丽，芳香宜人，是一种优良的盆栽观赏植物，通常用于花坛花境，亦可作地被植物...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E7%89%A1%E4%B8%B9/6080?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Spring/MuDan2.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    牡丹
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    牡丹花大色艳，品种繁多。性喜温暖、凉爽、干燥、阳光充足的环境。中国是世界牡丹的发祥地和世界牡丹王国...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- spring部分下面三块 -->
+                    <div class="flower_content_down">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E8%BF%8E%E6%98%A5%E8%8A%B1/2379?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Spring/YingChunHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    迎春花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    是中国常见的花卉之一。迎春花不仅花色端庄秀丽，气质非凡，具有不畏寒威，不择风土，适应性强的特点，历来为人们所喜爱...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E6%A8%B1%E8%8A%B1/15954108?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Spring/YingHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    樱花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    中国樱花性喜阳光和湿润气候；有一定耐寒力和耐旱力；不耐水湿和盐碱，对烟尘、不良气体抗性较弱；对海潮风抗性较弱...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E6%A1%83%E8%8A%B1/6172?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Spring/TaoHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    桃花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    桃花有很高的观赏价值，是文学创作的常用素材。此外，桃花中元素有疏通经络、滋润皮肤的药用价值。其花语为：爱情的俘虏...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2.summer模块 -->
+                <div id="flower_content_summer" class="hide">
+                    <!-- summer部分上面三块 -->
+                    <div class="flower_content_up">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E8%8D%B7%E8%8A%B1/158674" target="_blank">
+                                <img src="../四季名花/images/flower/Summer/HeHua2.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    荷花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    荷花分观赏和食用两大类。荷花全身都是宝贝，它的藕和莲子能食用，它“出污泥而不染”的品格恒为世人称颂...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E6%9B%BC%E9%99%80%E7%BD%97/84720?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Summer/ManTuoLuo.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    曼陀罗
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    曼陀罗不仅可用于麻醉，而且还可用于治疗疾病 。因花朵大而美丽，具有观赏价值，可种植于花园、庭院中，美化环境...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E8%8C%89%E8%8E%89%E8%8A%B1/4951" target="_blank">
+                                <img src="../四季名花/images/flower/Summer/MoLiHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    茉莉花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    茉莉油的身价很高，相当于黄金的价格，它虽无艳态惊群，但玫瑰之甜郁、梅花之馨香、兰花之幽远、玉兰之清雅，莫不兼而有之...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- summer部分下面三块 -->
+                    <div class="flower_content_down">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E7%B4%AB%E7%BD%97%E5%85%B0/5033" target="_blank">
+                                <img src="../四季名花/images/flower/Summer/ZiLuoLan.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    紫罗兰
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    紫罗兰花朵茂盛，花色鲜艳，香气浓郁，花期长，花序也长，为众多爱花者所喜爱，适宜于盆栽观赏...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E6%A1%94%E6%A2%97/6544" target="_blank">
+                                <img src="../四季名花/images/flower/Summer/JieGeng.jpeg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    桔梗
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    宣肺，利咽，祛痰，排脓。用于咳嗽痰多，胸闷不畅，咽痛，音哑，肺痈吐脓，疮疡脓成不溃...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E7%9F%B3%E6%A6%B4%E8%8A%B1/62898?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Summer/ShiLiuHua.jpeg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    石榴花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    石榴花既可观花又可观果，小盆盆栽供窗台、阳台和居室摆设，大盆盆栽，可布置公共场所和会场...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3.autumn模块 -->
+                <div id="flower_content_autumn" class="hide">
+                    <!-- autumn部分上面三块 -->
+                    <div class="flower_content_up">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E6%98%99%E8%8A%B1/9779247?fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Autumn/TanHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    昙花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    为著名的观赏花卉，俗称月下美人，琼花。仙人掌科，昙花属。每逢夏秋节令，繁星满天、夜深人静时，昙花开放...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E5%87%A4%E5%B0%BE%E5%85%B0/6557652" target="_blank">
+                                <img src="../四季名花/images/flower/Autumn/FengWeiLan.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    凤尾兰
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    凤尾兰常年浓绿，花、叶皆美，树态奇特，数株成丛，高低不一，叶形如剑，开 花时花茎高耸挺立，花色洁白...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E6%A1%82%E8%8A%B1/157211" target="_blank">
+                                <img src="../四季名花/images/flower/Autumn/GuiHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    桂花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    桂花功效：淡黄白色，芳香，提取芳香油，制桂花浸膏，可用于食品、化妆品，可制糕点、糖果，并可酿酒。桂花味辛，可入药...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- autumn部分下面三块 -->
+                    <div class="flower_content_down">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E9%87%91%E8%8A%B1%E8%8C%B6?fromtitle=%E9%87%91%E8%8C%B6%E8%8A%B1&fromid=6801127" target="_blank">
+                                <img src="../四季名花/images/flower/Autumn/JinChaHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    金茶花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    金花茶的发现填补了茶科家族没有金黄色花朵的空白。其蜡质的绿叶晶莹光洁，瓣呈透明，坚挺亮滑，一尘不染...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E8%BF%B7%E8%BF%AD%E9%A6%99/7550#5" target="_blank">
+                                <img src="../四季名花/images/flower/Autumn/MiDieXiang.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    迷迭香
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    迷迭香是一种名贵的天然香料植物，生长季节会散发一种清香气味，有清心提神的功效。它的茎、叶和花具有宜人的香味...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E8%8F%8A%E8%8A%B1/29500" target="_blank">
+                                <img src="../四季名花/images/flower/Autumn/JuHua.jpeg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    菊花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    菊花生长旺盛，萌发力强，一株菊花经多次摘心可以分生出上千个花蕾，有些品种的枝条柔软且多，便于制作各种造型...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4.winter模块 -->
+                <div id="flower_content_winter" class="hide">
+                    <!-- winter部分上面三块 -->
+                    <div class="flower_content_up">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E6%A2%85/5615328?fromtitle=%E6%A2%85%E8%8A%B1&fromid=17439&fr=aladdin" target="_blank">
+                                <img src="../四季名花/images/flower/Winter/MeiHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    梅花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    梅花不仅能用来观赏，还能用来入药。梅花作为“坚强、傲骨、高雅”等精神代表，表达了一种不屈不挠的的乐观的态度...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E6%B0%B4%E4%BB%99/6410?fromtitle=%E6%B0%B4%E4%BB%99%E8%8A%B1&fromid=314845" target="_blank">
+                                <img src="../四季名花/images/flower/Winter/ShuiXianHua.jpeg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    水仙花
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    中国水仙是草本花卉中少有的可雕刻的珍品，经雕刻师的巧手雕刻、水养，可塑造成各式各样、千姿百态的水仙花盆景...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E5%90%9B%E5%AD%90%E5%85%B0/188659" target="_blank">
+                                <img src="../四季名花/images/flower/Winter/JunZiLan.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    君子兰
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    君子兰原产南非，为多年生常绿草本花卉，喜温暖凉爽气候，怕高温严寒，夏季休眠，秋冬生长...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- winter部分下面三块 -->
+                    <div class="flower_content_down">
+                        <div class="flower_content_part" id="flower_content_up_part_1">
+                            <a href="https://baike.baidu.com/item/%E4%B8%80%E5%93%81%E7%BA%A2/803797" target="_blank">
+                                <img src="../四季名花/images/flower/Winter/YiPinHong.jpeg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    一品红
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    一品红花色鲜艳，花期长，正值圣诞、元旦、春节开花，盆栽布置室内环境可增加喜庆气氛；也适宜布置会议等公共场所...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_2">
+                            <a href="https://baike.baidu.com/item/%E9%B9%A4%E6%9C%9B%E5%85%B0#8" target="_blank">
+                                <img src="../四季名花/images/flower/Winter/MeiHua.jpg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    鹤望兰
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    鹤望兰四季常青，植株别致，具清晰、高雅之感。在其他花配叶的衬托下，相偎相依，似一对热恋中的情侣在互诉衷肠...
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flower_content_part" id="flower_content_up_part_3">
+                            <a href="https://baike.baidu.com/item/%E4%B8%89%E8%89%B2%E5%A0%87/200112" target="_blank">
+                                <img src="../四季名花/images/flower/Winter/SanSeJin.jpeg" class="flower_content_part_pic">
+                                <div class="flower_content_part_title">
+                                    三色堇
+                                </div>
+                                <div class="flower_content_part_intro">
+                                    三色堇在庭院布置上常地栽于花坛上，可作毛毡花坛、花丛花坛，成片、成线、成圆镶边栽植都很相宜...
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- ABOUT板块 -->
+    <div id="about" class="show">
+        <div id="about_top">
+            <div id="about_top_mask">
+                <p id="about_top_title">&nbsp;&nbsp; Welcome &nbsp; to &nbsp; the &nbsp; world &nbsp; of &nbsp; flowers ! &nbsp;&nbsp;</p>
+                <br>
+                <p id="about_top_text">&nbsp;&nbsp; You will know about various flowers of four seasons &nbsp;&nbsp;</p>
+                <br>
+                <p id="about_top_go">&nbsp;&nbsp;Let's &nbsp; GO !&nbsp;&nbsp; </p>
+            </div>
+        </div>
+        <div id="about_bottom">
+            <div id="about_bottom_line_1" class="about_bottom_line">
+                <div id="about_bottom_line_1_1" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E5%A4%A7%E4%B8%BD%E8%8A%B1/200399?fr=aladdin" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">大丽花</p>
+                            <p class="about_bottom_line_title_2">Dahlia pinnata Cav.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>大丽花</p>
+                                <p>Dahlia pinnata Cav.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_1_2" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E5%85%B0%E8%8A%B1/15278221" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">兰花</p>
+                            <p class="about_bottom_line_title_2">Cymbidium ssp.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>兰花</p>
+                                <p>Cymbidium ssp.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_1_3" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E9%A9%AC%E8%B9%84%E8%8E%B2/201250" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">马蹄莲</p>
+                            <p class="about_bottom_line_title_2">Zantedeschia aethiopica (L.) Spreng.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>马蹄莲</p>
+                                <p>Zantedeschia aethiopica (L.) Spreng.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_1_4" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E7%8E%AB%E7%91%B0/63206" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">玫瑰</p>
+                            <p class="about_bottom_line_title_2">Rosa rugosa Thunb.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>玫瑰</p>
+                                <p>Rosa rugosa Thunb.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="about_bottom_line_2" class="about_bottom_line">
+                <div id="about_bottom_line_2_1" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E9%A3%8E%E4%BF%A1%E5%AD%90/22530" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">风信子</p>
+                            <p class="about_bottom_line_title_2">Hyacinthus orientalis L.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>风信子</p>
+                                <p>Hyacinthus orientalis L.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_2_2" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E8%93%9D%E7%9C%BC%E8%8F%8A" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">蓝眼菊</p>
+                            <p class="about_bottom_line_title_2">Osteospermum</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>蓝眼菊</p>
+                                <p>Osteospermum</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_2_3" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E6%9B%BC%E7%8F%A0%E6%B2%99%E5%8D%8E/65704" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">曼珠沙华</p>
+                            <p class="about_bottom_line_title_2">Lycorisradiata</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>曼珠沙华</p>
+                                <p>Lycorisradiata</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_2_4" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E7%B4%AB%E7%BD%97%E5%85%B0/5033" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">紫罗兰</p>
+                            <p class="about_bottom_line_title_2">Matthiola incana (L.) R. Br.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>紫罗兰</p>
+                                <p>Matthiola incana (L.) R. Br.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="about_bottom_line_3" class="about_bottom_line">
+                <div id="about_bottom_line_3_1" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E6%9C%A8%E6%A7%BF%E8%8A%B1/1778" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">木槿花</p>
+                            <p class="about_bottom_line_title_2">Shrub Althea Flower</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>木槿花</p>
+                                <p>Shrub Althea Flower</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_3_2" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E9%B8%A2%E5%B0%BE%E5%B1%9E/3459868?fromtitle=%E9%B8%A2%E5%B0%BE%E8%8A%B1&fromid=1401" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">鸢尾花</p>
+                            <p class="about_bottom_line_title_2">Iris L.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>鸢尾花</p>
+                                <p>Iris L.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_3_3" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E6%B5%B7%E6%A3%A0%E8%8A%B1/969869" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">海棠花</p>
+                            <p class="about_bottom_line_title_2">Malus spectabilis （Ait.）Borkh</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>海棠花</p>
+                                <p>Malus spectabilis （Ait.）Borkh</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="about_bottom_line_3_4" class="about_bottom_line_part">
+                    <a href="https://baike.baidu.com/item/%E8%94%B7%E8%96%87/65296" target="_blank">
+                        <div class="about_bottom_line_part_mask">
+                            <p class="about_bottom_line_title_1">蔷薇</p>
+                            <p class="about_bottom_line_title_2">Rosa sp.</p>
+                            <div class="about_bottom_line_part_intro">
+                                <p>蔷薇</p>
+                                <p>Rosa sp.</p>
+                                <p>了解更多 >></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- copyright -->
+    <div id="copyright">
+        <p>Copyright ©2021 ChenXuXin &nbsp;&nbsp;|&nbsp;&nbsp; E-mail:2695976620@qq.com</p>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/flower.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/flowup.js"></script>
+
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+    <script>
+        L2Dwidget.init({
+            "model": {
+                jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+                "scale": 0.5
+            },
+            "display": {
+                "position": "right",
+                "width": 110,
+                "height": 150,
+                "hOffset": 0,
+                "vOffset": -20
+            },
+            "mobile": {
+                "show": true,
+                "scale": 0.5
+            },
+            "react": {
+                "opacityDefault": 0.7,
+                "opacityOnHover": 0.1
+            }
+        });
+    </script>
+
+
+</body>
+
+
+</html>

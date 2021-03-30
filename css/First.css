@@ -1,0 +1,40 @@
+#First{
+    width:1300px;
+    height:700px;
+    display: inline-block;
+    background: url("../images/FirstPage.jpg") no-repeat;
+    background-size: 100%;
+    text-align: center;
+    box-shadow: 10px 20px 20px 5px black;
+    margin:125px auto 0 auto;
+    white-space:nowrap;
+    border-radius:80px;
+}
+#First p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(241, 241, 235);
+    font-weight: bolder;
+    font-size: 45px;
+    line-height: 80px;
+}
+#readMore{
+    display: inline-block;
+    width:200px;
+    height:70px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid white;
+    color:white;
+    font-size: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#more{
+    display: inline-block;
+    margin: 12px auto;
+}
+#readMore:hover #more{
+    opacity: 0.6;
+    transform: scale(1.6);
+    transition-duration: 1s;
+}

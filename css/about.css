@@ -1,0 +1,271 @@
+#about {
+    width: 100vw;
+    height: 250vh;
+    min-width: 1024px;
+    background-color: rgb(230, 230, 230);
+}
+
+#about_top {
+    display: inline-block;
+    width: 100vw;
+    height: 74vh;
+    min-width: 1024px;
+    background: url(../images/back.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_top_mask {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 74vh;
+    text-align: center;
+    min-width: 1024px;
+}
+
+#about_top_title {
+    display: inline-block;
+    color: rgb(240, 240, 240);
+    height: 5vw;
+    font-size: 3.5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 5vw;
+    text-shadow: 0px 5px 10px rgb(10, 10, 10);
+    margin-top: 20vh;
+    margin-bottom: 6vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    min-width: 588px;
+    min-height: 52px;
+}
+
+#about_top_title:hover {
+    color: rgb(0, 0, 0, .7);
+    transform: rotate(3deg) scale(1.2);
+    transition-duration: 0.3s;
+    text-shadow: 0px 8px 10px rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.85);
+    cursor: pointer;
+}
+
+#about_top_text {
+    display: inline-block;
+    color: rgb(240, 240, 240);
+    height: 3.5vw;
+    font-size: 1.3vw;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    line-height: 3.5vw;
+    text-shadow: 0px 5px 10px rgb(10, 10, 10);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 2vw;
+    transition-duration: 0.2s;
+    min-width: 354px;
+    min-height: 36px;
+}
+
+#about_top_text:hover {
+    color: rgb(0, 0, 0, .7);
+    transform: rotate(-3deg) scale(1.2);
+    transition-duration: 0.3s;
+    text-shadow: 0px 8px 10px rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.85);
+    cursor: pointer;
+}
+
+#about_top_go {
+    display: inline-block;
+    color: rgb(240, 240, 240);
+    height: 3vw;
+    font-size: 1vw;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    line-height: 3vw;
+    text-shadow: 0px 5px 10px rgb(10, 10, 10);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: solid 3px rgb(240, 240, 240);
+    vertical-align: middle;
+    transition-duration: 0.2s;
+    min-width: 83px;
+    min-height: 32px;
+}
+
+#about_top_go:hover {
+    color: rgb(0, 0, 0, .7);
+    transition-duration: 0.3s;
+    text-shadow: 0px 8px 10px rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.85);
+    border: solid 3px rgb(0, 0, 0, .7);
+    cursor: pointer;
+    transform: rotate(3deg) scale(1.2);
+}
+
+#about_bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 80vw;
+    height: 150vh;
+    margin: 4vw auto;
+    min-width: 1024px;
+}
+
+.about_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 80vw;
+    height: 45vh;
+    margin: 5vh auto 0px auto;
+    min-width: 920px;
+}
+
+.about_bottom_line_part {
+    display: inline-block;
+    width: 15vw;
+    height: 45vh;
+    background-color: floralwhite;
+    min-width: 190px;
+    transition-duration: 1s;
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.about_bottom_line_part_intro {
+    font-size: 1.25vw;
+    font-family: Helvetica, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
+    color: rgb(230, 230, 230);
+    position: absolute;
+    bottom: 3vh;
+    left: 1.5vw;
+    transition-duration: 0.5s;
+    text-align: left;
+}
+
+.about_bottom_line_part_intro p:nth-child(2) {
+    font-size: 0.75vw;
+    color: rgb(220, 220, 220);
+}
+
+.about_bottom_line_part_intro p:nth-child(3) {
+    margin-top: 1vh;
+    font-size: 1vw;
+}
+
+.about_bottom_line_part_mask {
+    width: 15vw;
+    min-width: 190px;
+    height: 45vh;
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition-duration: 0.8s;
+    text-align: center;
+}
+
+.about_bottom_line_title_1 {
+    display: inline-block;
+    width: 70%;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    font-size: 2.5vw;
+    color: rgb(40, 40, 40);
+    font-family: Helvetica, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
+    font-weight: bold;
+    padding-top: 15vh;
+    padding-bottom: 1vh;
+    transform: translateY(20px);
+    opacity: 0;
+    transition-duration: 0.6s;
+}
+
+.about_bottom_line_title_2 {
+    font-size: 1.3vw;
+    color: rgb(40, 40, 40);
+    font-family: Helvetica, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, Arial, sans-serif;
+    padding-top: 2vh;
+    transform: translateY(20px);
+    opacity: 0;
+    transition-duration: 0.6s;
+}
+
+.about_bottom_line_part_mask:hover {
+    transform: scale(0.85);
+    background-color: rgb(230, 230, 230, 0.9);
+}
+
+.about_bottom_line_part_mask:hover .about_bottom_line_part_intro {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.about_bottom_line_part_mask:hover .about_bottom_line_title_1 {
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.about_bottom_line_part_mask:hover .about_bottom_line_title_2 {
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+#about_bottom_line_1_1 {
+    background: url(../images/flower/About/DaLiHua.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_1_2 {
+    background: url(../images/flower/About/LanHua.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_1_3 {
+    background: url(../images/flower/About/MaTiLian.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_1_4 {
+    background: url(../images/flower/About/MeiGui.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_2_1 {
+    background: url(../images/flower/About/FengXinZi.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_2_2 {
+    background: url(../images/flower/About/LanYanJv.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_2_3 {
+    background: url(../images/flower/About/ManZhuShaHua.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_2_4 {
+    background: url(../images/flower/About/ZiLuoLan.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_3_1 {
+    background: url(../images/flower/About/MuJinHua.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_3_2 {
+    background: url(../images/flower/About/YuanWeiHua.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_3_3 {
+    background: url(../images/flower/About/HaiTangHua.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#about_bottom_line_3_4 {
+    background: url(../images/flower/About/QiangWei.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
